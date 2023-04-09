@@ -1,0 +1,41 @@
+.Header {
+    position: fixed;
+    top: 0;
+    height: fit-content;
+    width: 100vw;
+    background-color: #f8f3f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.logo__text {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.logo__img {
+    width: 3rem;
+}
+
+.logo__motto {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #ff866b;
+}
