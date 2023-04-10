@@ -27,6 +27,7 @@
 .logo__text {
     margin: 0;
     font-size: 2.5rem;
+    color: #2b161b;
 }
 
 .logo__img {
@@ -38,4 +39,9 @@
     text-transform: uppercase;
     font-size: 1rem;
     color: #ff866b;
+}
+
+.navbar {
+    display: flex;
+    column-gap: 2rem;
 }

@@ -15,16 +15,15 @@ export default function Header() {
                 <p className={styles.logo__motto}>imagine a better future with it</p>
             </div>
 
-            <navbar>
-                <Button>Home</Button>
-                <Button>Services</Button>
-                <Button>Contact</Button>
-                <Button>English</Button>
-                <Button>日本語</Button>
-                <Button>お問い合わせ</Button>
+            <navbar className={styles.navbar}>
+                <Button text="Home" type="withoutBorder" />
+                <Button text="Services" type="withoutBorder" />
+                <Button text="Contact" type="withoutBorder" />
+                <Button text="English" type="withoutBorder" />
+                <Button text="日本語" type="withoutBorder" />
             </navbar>
 
-            <Button>お問い合わせ</Button>
+            <Button text="お問い合わせ" type="full"/>
         </header>
     );
 }

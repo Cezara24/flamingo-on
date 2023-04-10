@@ -1,8 +1,22 @@
-import React from "react";
-import styles from "./Button.module.css";
+import React from "react"
+import styles from "./Button.module.css"
 
-export default function Button() {
+export default function Button(props) {
+    const text = props.text
+    const type = props.type
+
     return (
-        <button className={styles.Button}></button>
+        <div>
+            <button
+                className={`
+                    ${styles.Button}
+                    ${type === "withoutBorder" && styles.button__withoutBorder}
+                    ${type === "empty" && styles.button__empty}
+                    ${type === "full" && styles.button__full}
+                `}
+            >
+            {text}
+            </button>
+        </div>
     )
 }

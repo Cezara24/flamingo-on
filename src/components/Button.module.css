@@ -5,15 +5,35 @@
     border-width: 0.3rem;
 }
 
-/* .withoutBorder {
-    border: none;
-    background-color: transparent;
+.button__withoutBorder {
     color: #817678;
-} */
+    background-color: transparent;
+    border: none;
+}
 
-/* .button__full {
-    color: #f8f3f5;
+.button__empty {
+    color: #817678; 
+    background-color: transparent;
+    border-style: solid;
+    border-color: #817678;
+}
+
+.button__withoutBorder:hover,
+.button__empty:hover {
+    color: #2b161b;
+    transition: all .2s linear;
+}
+
+.button__full {
+    color: #f8f3f5; 
+    background-color: #ff866b;
     border-style: solid;
     border-color: #ff866b;
-    background-color: #ff866b;
-} */
+}
+
+.button__full:hover {
+    color: #f8f3f5;
+    background-color: #f1511b;
+    border-color: #f1511b;
+    transition: all .2s linear;
+}

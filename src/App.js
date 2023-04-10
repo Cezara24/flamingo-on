@@ -9,7 +9,6 @@ export default function App() {
     <div className="App">
       <Header></Header>
       <HeroSection></HeroSection>
-      <Counter></Counter>
     </div>
   );
 }
