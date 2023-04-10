@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 import logo from "../images/logo.png";
-import buttonStyles from './Button.module.css';
+import Button from './Button';
 
 export default function Header() {
     return(
@@ -16,14 +16,15 @@ export default function Header() {
             </div>
 
             <navbar>
-                <button className={`${buttonStyles.Button} ${buttonStyles.withoutBorder}`}>Home</button>
-                <button className={`${buttonStyles.Button} ${buttonStyles.withoutBorder}`}>Services</button>
-                <button className={`${buttonStyles.Button} ${buttonStyles.withoutBorder}`}>Contact</button>
-                <button className={`${buttonStyles.Button} ${buttonStyles.withoutBorder}`}>English</button>
-                <button className={`${buttonStyles.Button} ${buttonStyles.withoutBorder}`}>日本語</button>
+                <Button>Home</Button>
+                <Button>Services</Button>
+                <Button>Contact</Button>
+                <Button>English</Button>
+                <Button>日本語</Button>
+                <Button>お問い合わせ</Button>
             </navbar>
 
-            <button className={`${buttonStyles.Button} ${buttonStyles.button__full}`}>お問い合わせ</button>
+            <Button>お問い合わせ</Button>
         </header>
     );
 }
