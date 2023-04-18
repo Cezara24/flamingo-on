@@ -1,20 +1,21 @@
 .Header {
     position: fixed;
     top: 0;
-    height: fit-content;
+    height: 100px;
     width: 100vw;
     background-color: #f8f3f5;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    z-index: 3;
 }
 
 .logo {
     width: fit-content;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem;
 }
 
 .textContainer {

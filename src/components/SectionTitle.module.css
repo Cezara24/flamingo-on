@@ -1,0 +1,18 @@
+.SectionTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: fit-content;
+    padding-bottom: 2rem;
+    position: relative;
+    float: left;
+}
+
+.SectionTitle::after {
+    content: "";
+    background: #fe8d74;
+    position: absolute;
+    right: 25%;
+    bottom: 0; 
+    width: 50%;
+    height: 2px;
+}

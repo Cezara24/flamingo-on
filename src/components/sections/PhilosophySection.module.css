@@ -1,0 +1,21 @@
+.PhilosophySection {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  color: #2b161b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.subtitle {
+  width: fit-content;
+}
+
+.notesContainer {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
