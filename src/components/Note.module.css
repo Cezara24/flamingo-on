@@ -12,6 +12,9 @@
   margin: 0 1rem 1rem 1rem;
 }
 
+.secondText {
+  margin-bottom: 0;
+}
 
 .link {
   color: #342024;
@@ -23,7 +26,7 @@
 .link:hover {
   color: #e95c1a;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .imgContainer {

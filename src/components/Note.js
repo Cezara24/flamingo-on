@@ -7,17 +7,29 @@ export default function Note(props) {
   const href = props.href;
   const imgSrc = props.imgSrc;
   const alt = props.alt;
+  const secondText = props.secondText;
   return (
     <div className={styles.Note}>
-      {text != "" ? <div className={styles.noteText}>{text}</div> : null}
+
+
+      {text ? <div className={styles.noteText}>{text}</div> : null}
+
+
       <a href={href} className={styles.link}>
         {link}
       </a>
-      {imgSrc != "" ? (
+
+
+      {secondText ? <p className={styles.secondText}>{secondText}</p> : null}
+
+
+      {imgSrc ? (
         <div className={styles.imgContainer}>
           <img className={styles.noteImg} src={imgSrc} alt={alt}></img>
         </div>
       ) : null}
+
+      
     </div>
   );
 }

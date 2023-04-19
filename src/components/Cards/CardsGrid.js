@@ -20,7 +20,6 @@ export default function CardsGrid(props) {
           buttonText={buttonText}
           buttonType="full"
           buttonTransform="uppercase"
-          arrows={cards[item].arrows}
         />
       ))}
     </div>

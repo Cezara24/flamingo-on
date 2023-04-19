@@ -24,11 +24,8 @@ export default function PhilosophySection() {
       <div className={styles.notesContainer}>
         <div className={styles.notes}>
           <Note
-            text=""
             link="一言では伝えきれませんので、是非こちらをご一読ください"
             href="https://flamingo-on.com/?page_id=2623"
-            imgSrc=""
-            alt=""
           />
           <Note
             text="代表note"

@@ -4,7 +4,7 @@ import HeroSection from "./components/sections/HeroSection";
 import Header from "./components/Header";
 import PhilosophySection from "./components/sections/PhilosophySection";
 import ServicesSection from "./components/sections/ServicesSection";
-// import { Counter } from './features/counter/Counter';
+import MembersSection from "./components/sections/MembersSection";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
       <HeroSection />
       <PhilosophySection />
       <ServicesSection />
-      {/* <Counter></Counter> */}
+      <MembersSection />
     </div>
   );
 }

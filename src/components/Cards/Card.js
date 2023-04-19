@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
 import Button from "../Button";
+import ScreenCardIcon from "./ScreenCardIcon";
+import MentorCardIcon from "./MentorCardIcon";
 
 export default function Card(props) {
   const category = props.category;
@@ -11,22 +13,23 @@ export default function Card(props) {
   const buttonType = props.buttonType;
   const buttonTransform = props.buttonTransform;
 
-  const icon = require(`../../images/${imgSrc}.png`)
-
   return (
     <div className={styles.Card}>
       <div className={styles.cardContainer}>
         <div className={styles.titleContainer}>
-            <img className={styles.img} src={icon} />
-            <div className={styles.title}>{title}</div>
+          <div className={styles.img}>
+            {imgSrc === "ScreenCardIcon" && <ScreenCardIcon />}
+            {imgSrc === "MentorCardIcon" && <MentorCardIcon />}
+          </div>
+          <div className={styles.title}>{title}</div>
         </div>
 
         <div className={styles.detailsContainer}>
-            <ul className={styles.details}>
+          <ul className={styles.details}>
             {details.map((item, index) => (
-                <li key={`${category}_${title}_${index}`}>{item}</li>
+              <li key={`${category}_${title}_${index}`}>{item}</li>
             ))}
-            </ul>
+          </ul>
         </div>
       </div>
 

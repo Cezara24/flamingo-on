@@ -1,0 +1,53 @@
+.MentorCardIcon {
+  color: #ff866b;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .screenIcon {
+  position: absolute;
+  font-size: 3.5rem;
+  padding-top: 0.5rem;
+} */
+
+.border {
+  width: 2.9rem;
+  height: 2.9rem;
+  z-index: 1;
+
+  background-color: transparent;
+  border-style: solid;
+  border-width: 13px;
+  border-radius: 2.5rem;
+  border-color: #f8f3f5;
+}
+
+.campaignIcon {
+  position: absolute;
+  font-size: 4rem;
+  padding-left: 1rem;
+}
+
+.soundIcon {
+  position: absolute;
+  font-size: 1.5rem;
+  z-index: 2;
+  padding: 0 0 0.95rem 0.95rem;
+  animation: pulse 2.5s infinite linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(45deg) scale(0.5);
+  }
+  50% {
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.5);
+  }
+}
