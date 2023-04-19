@@ -4,3 +4,11 @@
   color: #2b161b;
 }
 
+.cardsGridContainer {
+  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 3rem; */
+}

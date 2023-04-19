@@ -1,0 +1,56 @@
+.Card {
+  color: #244661;
+  background-color: #fff;
+  width: 25rem;
+  height: 30rem;
+  border: solid;
+  border-width: 5px;
+  border-color: #ff866b;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(100, 100, 100, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsContainer {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.img {
+  height: 5rem;
+  align-self: center;
+  padding-top: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2b161b;
+  padding: 0.5rem;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+.details {
+  margin: 0;
+}
+
+.details li {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: rgb(100, 86, 89);
+}
+
+.Button {
+  align-self: center;
+  margin: 0 0 1.5rem 0;
+}

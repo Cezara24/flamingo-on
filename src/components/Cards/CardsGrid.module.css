@@ -1,0 +1,8 @@
+.CardsGrid {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    justify-items: center;
+}
