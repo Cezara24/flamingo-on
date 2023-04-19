@@ -11,6 +11,7 @@ export default function App() {
       <Header />
       <HeroSection />
       <PhilosophySection />
+      {/* <Counter></Counter> */}
     </div>
   );
 }
