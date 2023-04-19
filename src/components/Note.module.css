@@ -2,17 +2,38 @@
   background-color: #f1bf9b;
   width: 100%;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 0;
   font-size: 1.5rem;
 }
 
 .noteText {
+  width: fit-content;
+  display: inline-block;
+  margin: 0 1rem 1rem 1rem;
 }
 
+
 .link {
+  color: #342024;
   text-decoration: none;
-  color: inherit;
+  width: fit-content;
+  margin: 1rem;
+}
+
+.link:hover {
+  color: #e95c1a;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.imgContainer {
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  justify-content: center;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .noteImg {
+  height: 1.7rem;
 }

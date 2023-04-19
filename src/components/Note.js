@@ -9,13 +9,15 @@ export default function Note(props) {
   const alt = props.alt;
   return (
     <div className={styles.Note}>
-      <p className={styles.noteText}>
-        {text}
-        <a href={href} className={styles.link}>
-          {link}
-        </a>
-        <img className={styles.noteImg} src={imgSrc} alt={alt}></img>
-      </p>
+      {text != "" ? <div className={styles.noteText}>{text}</div> : null}
+      <a href={href} className={styles.link}>
+        {link}
+      </a>
+      {imgSrc != "" ? (
+        <div className={styles.imgContainer}>
+          <img className={styles.noteImg} src={imgSrc} alt={alt}></img>
+        </div>
+      ) : null}
     </div>
   );
 }

@@ -1,4 +1,10 @@
 .SectionTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.titleText {
     font-size: 2.5rem;
     font-weight: 600;
     width: fit-content;
@@ -7,7 +13,7 @@
     float: left;
 }
 
-.SectionTitle::after {
+.titleText::after {
     content: "";
     background: #fe8d74;
     position: absolute;
