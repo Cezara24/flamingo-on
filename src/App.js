@@ -7,6 +7,7 @@ import ServicesSection from "./components/sections/ServicesSection";
 import MembersSection from "./components/sections/MembersSection";
 import FieldSection from "./components/sections/FieldSection";
 import ChooseUsSection from "./components/sections/ChooseUsSection";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <MembersSection />
       <FieldSection/>
       <ChooseUsSection/>
+      <Footer/>
     </div>
   );
 }

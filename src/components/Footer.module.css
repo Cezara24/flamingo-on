@@ -1,0 +1,32 @@
+.Footer {
+  height: fit-content;
+  color: #fff;
+  background-color: #2b161b;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+
+.Footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.mail {
+  font-weight: 600;
+}
+
+/* .link {
+  color: #fff;
+  text-decoration: none;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+} */
+
+/* .link:hover {
+  color: #e95c1a;
+  cursor: pointer;
+  transition: all 0.2s linear;
+} */
