@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import PhilosophySection from "./components/sections/PhilosophySection";
 import ServicesSection from "./components/sections/ServicesSection";
 import MembersSection from "./components/sections/MembersSection";
+import FieldSection from "./components/sections/FieldSection";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <PhilosophySection />
       <ServicesSection />
       <MembersSection />
+      <FieldSection/>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.Frame {
+  width: 25rem;
+  height: 30rem;
+  background-color: #ff866b;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.imgContainer {
+  width: 23rem;
+  height: fit-content;
+}
+
+.img {
+  width: 100%;
+  border-radius: 15px;
+}

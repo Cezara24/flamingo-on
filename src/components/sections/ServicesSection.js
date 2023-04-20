@@ -18,9 +18,9 @@ export default function ServicesSection() {
         !isNaN(servicesSectionHeight) ? { height: servicesSectionHeight } : null
       }
     >
-      <SectionTitle text="サービス"></SectionTitle>
+      <SectionTitle text="サービス" />
       <div className={styles.cardsGridContainer}>
-        <CardsGrid cards={cards} category="services" />
+        <CardsGrid cards={cards} category="services" col="2" />
       </div>
     </section>
   );

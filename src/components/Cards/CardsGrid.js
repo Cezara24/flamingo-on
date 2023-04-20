@@ -5,11 +5,18 @@ import Card from "./Card";
 export default function CardsGrid(props) {
   const cards = { ...props.cards };
   const category = props.category;
+  const col = props.col;
   const modules = [...Object.keys(cards)];
   const buttonText = "Read More →";
 
   return (
-    <div className={styles.CardsGrid}>
+    <div
+      className={`
+        ${styles.CardsGrid}
+        ${col === "2" && styles.col2}
+        ${col === "3" && styles.col3}
+      `}
+    >
       {modules.map((item) => (
         <Card
           category={category}

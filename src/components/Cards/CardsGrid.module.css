@@ -1,8 +1,15 @@
 .CardsGrid {
-    width: 65%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, fit-content(100%));
     grid-template-rows: 1fr;
-    justify-content: space-between;
+    justify-content: space-evenly;
     justify-items: center;
+}
+
+.col2 {
+    grid-template-columns: repeat(2, fit-content(100%));
+}
+
+.col3 {
+    grid-template-columns: repeat(3, fit-content(100%));
 }

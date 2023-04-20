@@ -3,6 +3,8 @@ import styles from "./Card.module.css";
 import Button from "../Button";
 import ScreenCardIcon from "./ScreenCardIcon";
 import MentorCardIcon from "./MentorCardIcon";
+import Frame from "../Frame";
+import fieldImg from "../../images/field.png"
 
 export default function Card(props) {
   const category = props.category;
@@ -14,36 +16,54 @@ export default function Card(props) {
   const buttonTransform = props.buttonTransform;
 
   return (
-    <div className={styles.Card}>
-      <div className={styles.cardContainer}>
-        <div className={styles.titleContainer}>
-          <div className={styles.img}>
-            {imgSrc === "ScreenCardIcon" && <ScreenCardIcon />}
-            {imgSrc === "MentorCardIcon" && <MentorCardIcon />}
+    <div>
+      {title === "img" && <Frame imgSrc={fieldImg}/>}
+      
+      {title != "img" && 
+        <div className={styles.Card}>
+
+          <div className={styles.cardContainer}>
+            <div
+              className={`${category != "field" && styles.titleImgContainer}
+            ${category === "field" && styles.titleImgContainer__fieldSection}`}
+            >
+              {imgSrc ? (
+                <div className={styles.img}>
+                  {imgSrc === "ScreenCardIcon" && <ScreenCardIcon />}
+                  {imgSrc === "MentorCardIcon" && <MentorCardIcon />}
+                </div>
+              ) : null}
+
+              <div
+                className={`${category != "field" && styles.title}
+              ${category === "field" && styles.title__fieldSection}`}
+              >
+                {title}
+              </div>
+            </div>
+
+            <div className={styles.detailsContainer}>
+              <ul className={styles.details}>
+                {details.map((item, index) => (
+                  <li key={`${category}_${title}_${index}`}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className={styles.title}>{title}</div>
-        </div>
 
-        <div className={styles.detailsContainer}>
-          <ul className={styles.details}>
-            {details.map((item, index) => (
-              <li key={`${category}_${title}_${index}`}>{item}</li>
-            ))}
-          </ul>
+          <div className={styles.Button}>
+            <Button
+              name={buttonText}
+              text={buttonText}
+              type={buttonType}
+              position=""
+              underlinedButton=""
+              transform={buttonTransform}
+              section=""
+            />
+          </div>
         </div>
-      </div>
-
-      <div className={styles.Button}>
-        <Button
-          name={buttonText}
-          text={buttonText}
-          type={buttonType}
-          position=""
-          underlinedButton=""
-          transform={buttonTransform}
-          section=""
-        />
-      </div>
+      }
     </div>
   );
 }

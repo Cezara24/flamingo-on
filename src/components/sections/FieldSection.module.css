@@ -1,0 +1,14 @@
+.FieldSection {
+    width: 100%;
+    background-color: #f8f3f5;
+    color: #2b161b;
+}
+
+.cardsGridContainer {
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
