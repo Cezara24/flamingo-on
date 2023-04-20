@@ -17,7 +17,7 @@ export default function FieldSection() {
       className={styles.FieldSection}
       style={!isNaN(fieldSectionheight) ? { height: fieldSectionheight } : null}
     >
-      <SectionTitle text="専門分野" />
+      <SectionTitle text="専門分野"/>
       <div className={styles.cardsGridContainer}>
         <CardsGrid cards={cards} category="field" col="3" />
       </div>

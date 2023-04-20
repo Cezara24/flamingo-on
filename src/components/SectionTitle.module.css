@@ -13,6 +13,10 @@
     float: left;
 }
 
+.color__2b161b {
+    color: #2b161b;
+}
+
 .titleText::after {
     content: "";
     background: #fe8d74;

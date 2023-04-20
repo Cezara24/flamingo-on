@@ -6,6 +6,7 @@ import PhilosophySection from "./components/sections/PhilosophySection";
 import ServicesSection from "./components/sections/ServicesSection";
 import MembersSection from "./components/sections/MembersSection";
 import FieldSection from "./components/sections/FieldSection";
+import ChooseUsSection from "./components/sections/ChooseUsSection";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <ServicesSection />
       <MembersSection />
       <FieldSection/>
+      <ChooseUsSection/>
     </div>
   );
 }

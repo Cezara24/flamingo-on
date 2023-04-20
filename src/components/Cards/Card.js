@@ -14,17 +14,21 @@ export default function Card(props) {
   const buttonText = props.buttonText;
   const buttonType = props.buttonType;
   const buttonTransform = props.buttonTransform;
+  const cardHeight = props.cardHeight ? props.cardHeight : "30rem";
 
   return (
     <div>
       {title === "img" && <Frame imgSrc={fieldImg}/>}
       
-      {title != "img" && 
-        <div className={styles.Card}>
+      {title !== "img" && 
+        <div
+          className={styles.Card}
+          style={{ height: cardHeight}}
+        >
 
           <div className={styles.cardContainer}>
             <div
-              className={`${category != "field" && styles.titleImgContainer}
+              className={`${category !== "field" && styles.titleImgContainer}
             ${category === "field" && styles.titleImgContainer__fieldSection}`}
             >
               {imgSrc ? (
@@ -35,7 +39,7 @@ export default function Card(props) {
               ) : null}
 
               <div
-                className={`${category != "field" && styles.title}
+                className={`${category !== "field" && styles.title}
               ${category === "field" && styles.title__fieldSection}`}
               >
                 {title}
@@ -43,7 +47,10 @@ export default function Card(props) {
             </div>
 
             <div className={styles.detailsContainer}>
-              <ul className={styles.details}>
+              <ul className={`
+                ${category !== "chooseUs" && styles.details}
+                ${category === "chooseUs" && styles.details__chooseUs}
+              `}>
                 {details.map((item, index) => (
                   <li key={`${category}_${title}_${index}`}>{item}</li>
                 ))}
