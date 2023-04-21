@@ -1,25 +1,18 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import styles from "./ChooseUsSection.module.css";
 import SectionTitle from "../SectionTitle";
-import CardsGrid from "../Cards/CardsGrid";
-import { vhWithoutHeader } from "../../helpers/helpers";
-import { chooseUsCards } from "../../helpers/cardsData";
+import Grid__Z from "../../components/zLayout/Grid__Z";
+import { chooseUsData } from "../../helpers/generalData";
 
 export default function ChooseUsSection() {
-  const headerHeight = useSelector((state) => state.header.height);
-  const chooseUsSectionheight = vhWithoutHeader(headerHeight);
-
-  const cards = chooseUsCards();
+  const data = chooseUsData();
 
   return (
-    <section
-      className={styles.ChooseUsSection}
-      style={!isNaN(chooseUsSectionheight) ? { height: chooseUsSectionheight } : null}
-    >
-      <SectionTitle text="選ばれる理由" textColor="#2b161b"/>
-      <div className={styles.cardsGridContainer}>
-        <CardsGrid cards={cards} category="chooseUs" col="3" cardHeight="40rem" />
+    <section className={styles.ChooseUsSection}>
+      <SectionTitle text="選ばれる理由" />
+
+      <div className={styles.zGridContainer}>
+        <Grid__Z data={data} category="chooseUs" />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import { useRef, useEffect, React } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getHeight } from "./headerSlice";
 import styles from "./Header.module.css";
 import logo from "../images/logo.png";

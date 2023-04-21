@@ -1,0 +1,65 @@
+.GridCell {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #2b161b;
+    font-size: 1.8rem;
+    font-weight: 600;
+    height: fit-content;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.arrow {
+    height: 100%;
+    width: 100%;
+    /* height: 2rem;
+    width: 2rem; */
+    /* background-color: red; */
+    /* margin: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowImg {
+    height: 5rem;
+    width: 100%;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.detailsContainer {
+    display: flex;
+    justify-items: center;
+    background-color: #f1bf9b;
+    /* background-color: #ff866b; */
+    /* color: #fff; */
+    border-radius: 20px;
+}
+
+.details {
+    padding: 1rem 2vw;
+}
+
+.details__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.details__list li {
+    font-size: 1.5rem;
+    margin: 0 0.2rem 0.5rem 0.2rem;
+}
+
+.details__list li:last-child {
+    margin-bottom: 0;
+}

@@ -1,10 +1,11 @@
 .Frame {
   width: 25rem;
-  height: 30rem;
+  height: 20rem;
   background-color: #ff866b;
   border-radius: 15px;
   display: flex;
   align-items: center;
+  /* box-shadow: 10px 10px 10px rgba(100, 100, 100, 0.3); */
 }
 
 .imgContainer {

@@ -1,11 +1,14 @@
 .ServicesSection {
+  height: 100vh;
   width: 100%;
   background-color: #f8f3f5;
   color: #2b161b;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardsGridContainer {
-  height: 72vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;

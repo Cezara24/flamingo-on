@@ -1,12 +1,15 @@
 .HeroSection {
   height: 100vh;
   width: 100%;
-  background-color: #f8f3f5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/HeroSectionBackground.jpg");
+  background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.cover {
-  align-self: center;
-  width: 65%;
+.title {
+  font-size: 8rem;
+  color: #f8f3f5;
 }

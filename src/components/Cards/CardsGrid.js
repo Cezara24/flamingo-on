@@ -7,7 +7,7 @@ export default function CardsGrid(props) {
   const category = props.category;
   const col = props.col;
   const cardHeight = props.cardHeight;
-  const modules = [...Object.keys(cards)];
+  const cardKeys = [...Object.keys(cards)];
   const buttonText = "Read More →";
 
   return (
@@ -18,7 +18,7 @@ export default function CardsGrid(props) {
         ${col === "3" && styles.col3}
       `}
     >
-      {modules.map((item) => (
+      {cardKeys.map((item) => (
         <Card
           category={category}
           cardHeight={cardHeight}

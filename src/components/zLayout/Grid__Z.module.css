@@ -1,0 +1,10 @@
+.Grid__Z {
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10rem;
+  /* column-gap: 10vw; */
+  justify-items: center;
+  align-items: center;
+}

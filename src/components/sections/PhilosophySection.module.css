@@ -1,7 +1,10 @@
 .PhilosophySection {
+  height: 100vh;
   width: 100%;
   background-color: #fff;
   color: #2b161b;
+  display: flex;
+  flex-direction: column;
 }
 
 .subtitle {
@@ -11,10 +14,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 2vh 0;
 }
 
 .notesContainer {
-  height: 60vh;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
